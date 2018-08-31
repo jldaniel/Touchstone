@@ -7,7 +7,7 @@ class HolderTable(Model):
         """
         Holder Table Function
         """
-        super().__init__()
+        super().__init__(name='Holder Table')
         self._n_dim = 2
         self._x_opt = [[8.05502, 9.66459], [8.05502, -9.66459], [-8.05502, 9.66459], [-8.05502, -9.66459]]
         self._f_opt = -19.2085

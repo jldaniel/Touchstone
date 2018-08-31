@@ -7,7 +7,8 @@ from numpy import apply_along_axis
 
 
 class Model(ABC):
-    def __init__(self):
+    def __init__(self, name=" "):
+        self._name = name
         self._bounds = None
         self._n_dim = None
         self._x_opt = None
@@ -41,6 +42,10 @@ class Model(ABC):
     @abstractmethod
     def evaluate(self, X):
         raise NotImplementedError
+
+    @property
+    def name(self):
+        return self._name
 
     @property
     def bounds(self):

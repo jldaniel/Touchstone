@@ -13,7 +13,7 @@ class Bukin(Model):
         Global Optimization Test Functions Index. Retrieved June 2013,
         from http://infinity77.net/global_optimization/test_functions.html#test-functions-index
         """
-        super().__init__()
+        super().__init__(name='Bukin')
         self._n_dim = 2
         self._x_opt = [-10., 1.]
         self._f_opt = 0.0

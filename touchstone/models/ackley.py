@@ -5,7 +5,7 @@ from numpy import pi, cos, exp, sqrt, array
 
 class Ackley(Model):
     def __init__(self, n_dim=2, bounds='small'):
-        super().__init__()
+        super().__init__(name='Ackley')
         self._n_dim = n_dim
         self._x_opt = [0.0]*n_dim
         self._f_opt = 0.0

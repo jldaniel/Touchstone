@@ -8,7 +8,7 @@ class Langermann(Model):
         Langermann Function m=5
         https://arxiv.org/pdf/1308.4008v1.pdf
         """
-        super().__init__()
+        super().__init__(name='Langermann')
         self._n_dim = 2
         self._x_opt = [2.00299219, 1.006096]
         self._f_opt = -5.1621259

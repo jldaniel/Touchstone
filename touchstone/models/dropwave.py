@@ -10,7 +10,7 @@ class DropWave(Model):
         Global Optimization Test Functions Index. Retrieved June 2013,
         from http://infinity77.net/global_optimization/test_functions.html#test-functions-index
         """
-        super().__init__()
+        super().__init__(name='Drop Wave')
         self._n_dim = 2
         self._x_opt = [[0.0, 0.0]]
         self._f_opt = -1.0

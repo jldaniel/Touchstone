@@ -5,7 +5,7 @@ from numpy import array, sin, pi, power
 
 class GramacyLee(Model):
     def __init__(self):
-        super().__init__()
+        super().__init__(name='Gramacy Lee')
         self._n_dim = 1
         self._x_opt = [[0.54856344]]
         self._f_opt = -0.86901113

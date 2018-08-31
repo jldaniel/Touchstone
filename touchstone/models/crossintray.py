@@ -7,7 +7,7 @@ class CrossInTray(Model):
         """
         Cross-In-Tray function
         """
-        super().__init__()
+        super().__init__(name='Cross In Tray')
         self._n_dim = 2
         self._x_opt = [[1.3491, -1.3491], [1.3491, 1.3491], [-1.3491, 1.3491], [-1.3491, -1.3491]]
         self._f_opt = -2.06261

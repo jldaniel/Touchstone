@@ -5,7 +5,7 @@ from numpy import array
 
 class Booth(Model):
     def __init__(self):
-        super().__init__()
+        super().__init__(name='Booth')
         self._n_dim = 2
         self._x_opt = [1.0, 3.0]
         self._f_opt = 0.0

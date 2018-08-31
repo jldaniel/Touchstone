@@ -5,7 +5,7 @@ from numpy import array
 
 class Rosenbrock(Model):
     def __init__(self, n_dim=2, bounds='small'):
-        super().__init__()
+        super().__init__(name='Rosenbrock')
         self._n_dim = n_dim
         self._x_opt = [1.0]*n_dim
         self._f_opt = 0.0

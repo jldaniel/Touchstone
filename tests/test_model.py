@@ -6,7 +6,7 @@ from sklearn.utils.testing import assert_equal, assert_array_almost_equal, asser
 
 class MockModel(Model):
     def __init__(self):
-        super().__init__()
+        super().__init__(name='Mock')
         self._n_dim = 2
         self._x_opt = [1.0, 1.0]
         self._f_opt = 0.0
@@ -14,6 +14,11 @@ class MockModel(Model):
 
     def evaluate(self, X):
         return X[0] + X[1]
+
+
+def test_get_name():
+    model = MockModel()
+    assert_equal(model.name, 'Mock')
 
 
 def test_evaluate_model_single_point():

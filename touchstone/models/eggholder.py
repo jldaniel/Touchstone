@@ -7,7 +7,7 @@ class Eggholder(Model):
         """
         Egg Holder function
         """
-        super().__init__()
+        super().__init__(name='Egg Holder')
         self._n_dim = 2
         self._x_opt = [512.0, 404.2319]
         self._f_opt = -959.6407
